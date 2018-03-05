@@ -4,6 +4,7 @@ import './App.css';
 import PropTypes from 'prop-types';
 import api from './utils/api';
 import CityInput from './CityInput';
+import Forecast from './Forecast';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 const Header = (props) => {
@@ -64,6 +65,7 @@ class App extends Component {
         <div className="App">
           <Switch>
             <Route exact path="/" component={Container} />
+            <Route path="/forecast" component={Forecast} />
           </Switch>
         </div>
       </Router>
